@@ -4,11 +4,13 @@ pipeline {
       stage('BUILD'){
          steps{
             sh 'mkdir dir4'
+	    sh 'sleep 4'
          }
       }
       stage('TEST'){
          steps{
             sh 'mkdir dir5'
+	    sh 'sleep 4'
          }
       }
       stage('DEPLOY'){
